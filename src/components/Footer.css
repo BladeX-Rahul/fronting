@@ -1,0 +1,19 @@
+.footer { background: var(--gray-900); color: var(--gray-400); padding: 3.5rem 1.5rem 0; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 2fr; gap: 3rem; padding-bottom: 3rem; }
+.footer-logo { display: flex; align-items: center; gap: 8px; margin-bottom: 1rem; }
+.footer-logo span { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--white); }
+.logo-icon-sm { width: 30px; height: 30px; background: var(--brand); color: #fff; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; }
+.footer-tagline { font-size: 13px; line-height: 1.65; max-width: 260px; }
+.footer-col-title { font-size: 13px; font-weight: 700; color: var(--white); text-transform: uppercase; letter-spacing: .6px; margin-bottom: .75rem; }
+.footer-link { display: block; font-size: 13px; color: var(--gray-400); margin-bottom: 6px; transition: color .15s; }
+.footer-link:hover { color: var(--white); }
+.footer-newsletter-sub { font-size: 13px; margin-bottom: .75rem; line-height: 1.5; }
+.newsletter-form { display: flex; gap: 8px; }
+.newsletter-input { flex: 1; padding: 9px 12px; border-radius: var(--radius-sm); border: 1px solid var(--gray-700); background: var(--gray-800); color: var(--white); font-size: 13px; outline: none; }
+.newsletter-input:focus { border-color: var(--brand); }
+.newsletter-btn { padding: 9px 16px; background: var(--brand); color: #fff; border: none; border-radius: var(--radius-sm); font-size: 13px; font-weight: 500; cursor: pointer; white-space: nowrap; display: flex; align-items: center; gap: 6px; transition: background .15s; }
+.newsletter-btn:hover:not(:disabled) { background: var(--brand-dark); }
+.newsletter-btn:disabled { opacity: .65; cursor: not-allowed; }
+.newsletter-msg { font-size: 12px; margin-top: 6px; color: #4ade80; }
+.footer-bottom { border-top: 1px solid var(--gray-800); padding: 1.25rem 0; display: flex; justify-content: space-between; max-width: 1200px; margin: 0 auto; font-size: 12px; }
+@media (max-width: 768px) { .footer-inner { grid-template-columns: 1fr; gap: 2rem; } .footer-bottom { flex-direction: column; gap: 4px; text-align: center; } }

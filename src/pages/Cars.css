@@ -1,0 +1,26 @@
+.cars-page { display: flex; max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; gap: 2rem; min-height: calc(100vh - var(--nav-h)); }
+.filters-panel { width: 260px; flex-shrink: 0; background: var(--white); border: 1.5px solid var(--gray-200); border-radius: var(--radius-lg); padding: 1.5rem; height: fit-content; position: sticky; top: calc(var(--nav-h) + 1rem); }
+.filters-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
+.filters-header h3 { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--gray-900); }
+.clear-btn { font-size: 12px; color: var(--brand); background: none; border: none; cursor: pointer; font-weight: 500; }
+.clear-btn:hover { text-decoration: underline; }
+.filter-group { margin-bottom: 1.25rem; }
+.filter-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.fchip { padding: 4px 12px; border-radius: 20px; border: 1.5px solid var(--gray-200); background: var(--gray-50); color: var(--gray-600); font-size: 12px; font-weight: 500; cursor: pointer; transition: all .12s; }
+.fchip:hover { border-color: var(--brand); color: var(--brand); }
+.fchip-active { border-color: var(--brand) !important; background: var(--brand-light) !important; color: var(--brand-dark) !important; font-weight: 600; }
+.price-slider { width: 100%; margin-top: 8px; accent-color: var(--brand); }
+.slider-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--gray-400); margin-top: 4px; }
+.avail-toggle { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--gray-700); cursor: pointer; }
+.avail-toggle input { accent-color: var(--brand); width: 16px; height: 16px; }
+
+.cars-main { flex: 1; }
+.cars-top-bar { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.5rem; }
+.cars-title { font-family: var(--font-display); font-size: 24px; font-weight: 700; color: var(--gray-900); }
+.cars-count { font-size: 14px; color: var(--gray-500); }
+.cars-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(280px,1fr)); gap: 18px; }
+.cars-loading, .cars-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 5rem 2rem; color: var(--gray-500); text-align: center; }
+.cars-empty span { font-size: 48px; }
+.cars-empty p { font-size: 15px; }
+
+@media (max-width: 900px) { .cars-page { flex-direction: column; } .filters-panel { width: 100%; position: static; } }
