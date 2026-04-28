@@ -16,12 +16,16 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="navbar">
-      <div className="navbar-inner">
-        <Link to="/" className="navbar-logo">
-          <div className="logo-icon">R</div>
-          <span>RentX</span>
-        </Link>
+  <nav className="navbar">
+    <div className="navbar-inner">
+      <Link to="/" className="navbar-logo">
+        <img
+          src={require("../assests/logo.png")}
+          alt="RentX Logo"
+          className="logo-image"
+        />
+        <span>RentX</span>
+      </Link>
 
         <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
           <Link to="/"      className={`nav-link ${pathname==="/"?"active":""}`} onClick={()=>setMenuOpen(false)}>Home</Link>

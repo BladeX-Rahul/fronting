@@ -82,3 +82,9 @@
   .navbar-actions { gap: 6px; }
   .nav-btn { padding: 7px 12px !important; font-size: 13px; }
 }
+
+.navbar-logo img {
+  height: 60px;   /* adjust size here */
+  width: auto;
+  object-fit: contain;
+}

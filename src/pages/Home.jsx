@@ -39,7 +39,8 @@ export default function Home() {
         </div>
         <div className="hero-visual">
           <div className="hero-car-card">
-            <img src="https://placehold.co/480x300/2563eb/white?text=🚗+Drive+in+Style" alt="hero car"/>
+            <img src={require("../assests/CarFront.png")} />
+            {/* <img src="https://placehold.co/480x300/2563eb/white?text=🚗+Drive+in+Style" alt="hero car"/> */}
           </div>
           <div className="blob h1"/><div className="blob h2"/>
         </div>

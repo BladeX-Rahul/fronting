@@ -68,3 +68,5 @@ img { max-width: 100%; display: block; }
 .badge-confirmed { background:var(--green-light);  color:var(--green); }
 .badge-cancelled { background:var(--red-light);    color:var(--red); }
 .badge-completed { background:var(--brand-light);  color:var(--brand-dark); }
+
+
