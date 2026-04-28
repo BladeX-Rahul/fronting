@@ -1,5 +1,5 @@
-const BASE = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
-
+// const BASE = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+const BASE = process.env.REACT_APP_API_URL || "https://backending-1.onrender.com/api";
 function getToken() {
   const user = localStorage.getItem("rentx_user");
   return user ? JSON.parse(user).token : null;
