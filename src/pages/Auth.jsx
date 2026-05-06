@@ -45,7 +45,7 @@ export function Login() {
         <p className="auth-switch">Don't have an account? <Link to="/register" className="auth-link">Sign up</Link></p>
         <div className="auth-demo">
           <p className="demo-title">Demo Credentials</p>
-          <p>Admin: <strong>admin@rentx.com</strong> / <strong>admin123</strong></p>
+          <p>Admin: <strong>admin@gmail.com</strong> / <strong>123456</strong></p>
         </div>
       </div>
     </div>
